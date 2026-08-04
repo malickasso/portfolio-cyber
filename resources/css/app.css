@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+    --color-bg-dark: #0B0F19;
+    --color-bg-panel: #111827;
+    --color-accent: #00E5A0;
+    --color-accent-dark: #00B980;
+    --color-border-soft: #1F2937;
+
+    --font-sans: "Space Grotesk", sans-serif;
+    --font-mono: "JetBrains Mono", monospace;
+}
