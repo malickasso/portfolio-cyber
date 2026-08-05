@@ -10,3 +10,27 @@
     --font-sans: "Space Grotesk", sans-serif;
     --font-mono: "JetBrains Mono", monospace;
 }
+
+/* Animation au défilement (Scroll Reveal) */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Effet de zoom & élévation fluide au survol des cartes */
+.card-hover {
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 10px 30px -10px rgba(0, 229, 160, 0.15);
+    /* Ombre portée néon/accent */
+}

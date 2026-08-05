@@ -7,9 +7,9 @@
 
         <!-- Header de section -->
         <div class="mb-16">
-            <p class="font-mono text-accent text-sm uppercase tracking-wider mb-2">// 01. À PROPOS DE MOI</p>
+            <p class="font-mono text-accent text-sm uppercase tracking-wider mb-2">// 01. QUI SUIS-JE ?</p>
             <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">
-                À la croisée du Code et de la Sécurité
+                À propos de moi
             </h2>
         </div>
 
@@ -67,7 +67,7 @@
                     </div>
                     <div class="flex justify-between border-b border-border-soft/40 pb-3">
                         <dt class="text-gray-500">Localisation</dt>
-                        <dd class="text-gray-200">Cotonou, Bénin 🇧🇯</dd>
+                        <dd class="text-gray-200">Abomey-Calavi, Bénin 🇧🇯</dd>
                     </div>
                     <div class="flex justify-between border-b border-border-soft/40 pb-3">
                         <dt class="text-gray-500">Formation</dt>

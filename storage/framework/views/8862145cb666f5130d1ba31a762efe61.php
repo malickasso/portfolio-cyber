@@ -1,20 +1,24 @@
-<section id="blog" class="py-24 border-t border-border-soft bg-bg-dark relative overflow-hidden">
+<section id="blog" class="py-24 border-t border-border-soft bg-bg-dark relative overflow-hidden reveal">
+
+    <!-- Lueur d'ambiance cyber -->
+    <div class="absolute top-1/4 right-10 w-80 h-80 bg-accent/5 rounded-full blur-3xl pointer-events-none"></div>
 
     <div class="max-w-7xl mx-auto px-6 relative z-10">
 
         <!-- Header de section -->
         <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
             <div>
-                <p class="font-mono text-accent text-sm uppercase tracking-wider mb-2">// 05. ARTICLES & WRITE-UPS</p>
+                <p class="font-mono text-accent text-sm uppercase tracking-wider mb-2">// 06. ARTICLES &amp; WRITE-UPS
+                </p>
                 <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">Derniers articles &amp; Analyses
                 </h2>
             </div>
 
-            <!-- Lien vers le blog complet (si tu en as un) -->
+            <!-- Lien vers le blog complet -->
             <a href="#"
-                class="font-mono text-xs text-accent uppercase tracking-wider hover:underline flex items-center gap-2">
+                class="font-mono text-xs text-accent uppercase tracking-wider hover:underline flex items-center gap-2 group/link">
                 <span>Consulter tous les write-ups</span>
-                <span>&rarr;</span>
+                <span class="group-hover/link:translate-x-1 transition-transform">&rarr;</span>
             </a>
         </div>
 
@@ -59,7 +63,21 @@ $postsList = $posts ?? [
 
             <?php $__currentLoopData = $postsList; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $post): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                 <article
-                    class="group bg-bg-panel border border-border-soft hover:border-accent transition-all duration-300 flex flex-col justify-between overflow-hidden">
+                    class="group bg-bg-panel border border-border-soft hover:border-accent card-hover transition-all duration-300 flex flex-col justify-between overflow-hidden relative rounded-none">
+
+                    <!-- Viseurs décoratifs style Cyber sur les coins au survol -->
+                    <div
+                        class="absolute -top-1 -left-1 w-2.5 h-2.5 border-t-2 border-l-2 border-accent opacity-0 group-hover:opacity-100 transition-opacity z-20">
+                    </div>
+                    <div
+                        class="absolute -top-1 -right-1 w-2.5 h-2.5 border-t-2 border-r-2 border-accent opacity-0 group-hover:opacity-100 transition-opacity z-20">
+                    </div>
+                    <div
+                        class="absolute -bottom-1 -left-1 w-2.5 h-2.5 border-b-2 border-l-2 border-accent opacity-0 group-hover:opacity-100 transition-opacity z-20">
+                    </div>
+                    <div
+                        class="absolute -bottom-1 -right-1 w-2.5 h-2.5 border-b-2 border-r-2 border-accent opacity-0 group-hover:opacity-100 transition-opacity z-20">
+                    </div>
 
                     <div>
                         <!-- Couverture Article ou Image Par Défaut Cyber -->
@@ -108,7 +126,7 @@ $postsList = $posts ?? [
 
                             <!-- Tag flottant Catégorie -->
                             <span
-                                class="absolute top-3 right-3 font-mono text-[10px] uppercase text-accent bg-bg-dark/90 backdrop-blur-md px-2 py-0.5 border border-accent/30">
+                                class="absolute top-3 right-3 font-mono text-[10px] uppercase text-accent bg-bg-dark/90 backdrop-blur-md px-2 py-0.5 border border-accent/30 rounded-none">
                                 <?php echo e($post['category']); ?>
 
                             </span>

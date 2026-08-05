@@ -1,31 +1,34 @@
-<section id="projects" class="py-24 border-t border-border-soft bg-bg-dark relative overflow-hidden">
+<section id="projects" class="py-24 border-t border-border-soft bg-bg-dark relative overflow-hidden reveal">
+
+    <!-- Lueur d'ambiance cyber -->
+    <div class="absolute bottom-0 left-1/4 w-80 h-80 bg-accent/5 rounded-full blur-3xl pointer-events-none"></div>
 
     <div class="max-w-7xl mx-auto px-6 relative z-10">
 
         <!-- Header & Filtres -->
         <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
             <div>
-                <p class="font-mono text-accent text-sm uppercase tracking-wider mb-2">// 03. FEATURED WORK</p>
-                <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">Réalisations & Write-ups</h2>
+                <p class="font-mono text-accent text-sm uppercase tracking-wider mb-2">// 04. CE QUE J'AI CONSTRUIT</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">Réalisations &amp; Write-ups</h2>
             </div>
 
-            <!-- Filtres de catégories (Style Terminal/Rectangulaire) -->
+            <!-- Filtres de catégories (Style Terminal/Rectangulaire Strict) -->
             <div class="flex flex-wrap gap-2 font-mono text-xs uppercase tracking-wider">
                 <button data-filter="all"
-                    class="filter-btn active-filter border border-accent bg-accent text-bg-dark px-4 py-2 font-semibold transition-all">
+                    class="filter-btn active-filter border border-accent bg-accent text-bg-dark px-4 py-2 font-semibold rounded-none transition-all duration-300">
                     [Tout]
                 </button>
                 <button data-filter="web"
-                    class="filter-btn border border-border-soft text-gray-400 px-4 py-2 hover:border-accent hover:text-accent transition-all">
+                    class="filter-btn border border-border-soft text-gray-400 px-4 py-2 rounded-none hover:border-accent hover:text-accent transition-all duration-300">
                     Web Dev
                 </button>
                 <button data-filter="security"
-                    class="filter-btn border border-border-soft text-gray-400 px-4 py-2 hover:border-accent hover:text-accent transition-all">
+                    class="filter-btn border border-border-soft text-gray-400 px-4 py-2 rounded-none hover:border-accent hover:text-accent transition-all duration-300">
                     Sécurité / Audit
                 </button>
                 <button data-filter="network"
-                    class="filter-btn border border-border-soft text-gray-400 px-4 py-2 hover:border-accent hover:text-accent transition-all">
-                    Réseau & Infra
+                    class="filter-btn border border-border-soft text-gray-400 px-4 py-2 rounded-none hover:border-accent hover:text-accent transition-all duration-300">
+                    Réseau &amp; Infra
                 </button>
             </div>
         </div>
@@ -92,7 +95,21 @@ $projectList = $projects ?? [
             <?php $__currentLoopData = $projectList; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $project): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                 <div class="project-card" data-category="<?php echo e($project['category']); ?>">
                     <div
-                        class="group bg-bg-panel border border-border-soft hover:border-accent transition-all duration-300 h-full flex flex-col justify-between">
+                        class="group bg-bg-panel border border-border-soft hover:border-accent card-hover transition-all duration-300 h-full flex flex-col justify-between relative rounded-none">
+
+                        <!-- Viseurs décoratifs style Cyber sur les coins au survol -->
+                        <div
+                            class="absolute -top-1 -left-1 w-2.5 h-2.5 border-t-2 border-l-2 border-accent opacity-0 group-hover:opacity-100 transition-opacity z-20">
+                        </div>
+                        <div
+                            class="absolute -top-1 -right-1 w-2.5 h-2.5 border-t-2 border-r-2 border-accent opacity-0 group-hover:opacity-100 transition-opacity z-20">
+                        </div>
+                        <div
+                            class="absolute -bottom-1 -left-1 w-2.5 h-2.5 border-b-2 border-l-2 border-accent opacity-0 group-hover:opacity-100 transition-opacity z-20">
+                        </div>
+                        <div
+                            class="absolute -bottom-1 -right-1 w-2.5 h-2.5 border-b-2 border-r-2 border-accent opacity-0 group-hover:opacity-100 transition-opacity z-20">
+                        </div>
 
                         <!-- Zone d'image / Fallback Cyber -->
                         <div
@@ -136,7 +153,7 @@ $projectList = $projects ?? [
 
                             <!-- Tag flottant -->
                             <span
-                                class="absolute top-3 right-3 font-mono text-[10px] uppercase text-accent bg-bg-dark/90 backdrop-blur-md px-2 py-0.5 border border-accent/30">
+                                class="absolute top-3 right-3 font-mono text-[10px] uppercase text-accent bg-bg-dark/90 backdrop-blur-md px-2 py-0.5 border border-accent/30 rounded-none">
                                 <?php echo e($project['tag']); ?>
 
                             </span>
