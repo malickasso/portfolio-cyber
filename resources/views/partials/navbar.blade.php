@@ -12,14 +12,17 @@
         <nav class="hidden md:flex items-center gap-8 font-mono text-xs uppercase tracking-widest text-gray-300">
             <a href="#about"
                 class="hover:text-accent transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-accent hover:after:w-full after:transition-all">À
-                propos de moi</a>
+                propos</a>
             <a href="#skills"
                 class="hover:text-accent transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-accent hover:after:w-full after:transition-all">Compétences</a>
+            <a href="#services"
+                class="hover:text-accent transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-accent hover:after:w-full after:transition-all">Services</a>
             <a href="#projects"
                 class="hover:text-accent transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-accent hover:after:w-full after:transition-all">Mes
                 réalisations</a>
-            <a href="#testimonials"
+            {{-- <a href="#testimonials"
                 class="hover:text-accent transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-accent hover:after:w-full after:transition-all">Témoignages</a>
+            --}}
             <a href="#blog"
                 class="hover:text-accent transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-accent hover:after:w-full after:transition-all">Blog</a>
         </nav>
@@ -56,21 +59,27 @@
                 <span>02. Compétences</span>
                 <span class="text-accent">&rarr;</span>
             </a>
+            <a href="#services"
+                class="mobile-link py-3 border-b border-border-soft/40 text-gray-300 hover:text-accent transition-colors flex justify-between items-center">
+                <span>03. Services</span>
+                <span class="text-accent">&rarr;</span>
+            </a>
             <a href="#projects"
                 class="mobile-link py-3 border-b border-border-soft/40 text-gray-300 hover:text-accent transition-colors flex justify-between items-center">
-                <span>03. Mes réalisations</span>
+                <span>04. Mes réalisations</span>
                 <span class="text-accent">&rarr;</span>
             </a>
+            <a></a>
             <a href="#testimonials"
                 class="mobile-link py-3 border-b border-border-soft/40 text-gray-300 hover:text-accent transition-colors flex justify-between items-center">
-                <span>04. Témoignages</span>
+                <span>05. Témoignages</span>
                 <span class="text-accent">&rarr;</span>
             </a>
-            <a href="#blog"
+            {{--  <a href="#blog"
                 class="mobile-link py-3 border-b border-border-soft/40 text-gray-300 hover:text-accent transition-colors flex justify-between items-center">
-                <span>05. Blog</span>
+                <span>06. Blog</span>
                 <span class="text-accent">&rarr;</span>
-            </a>
+            </a> --}}
 
             <a href="#contact"
                 class="mobile-link mt-4 border border-accent bg-accent text-bg-dark text-center px-5 py-3 font-semibold rounded-none hover:bg-transparent hover:text-accent transition-all block">

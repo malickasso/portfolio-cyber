@@ -1,13 +1,16 @@
-<section id="skills" class="py-24 border-t border-border-soft bg-bg-dark relative overflow-hidden">
+<section id="skills" class="py-24 border-t border-border-soft bg-bg-dark relative overflow-hidden reveal">
+
+    <!-- Lueur subtile en arrière-plan -->
+    <div class="absolute top-1/2 left-0 w-80 h-80 bg-accent/5 rounded-full blur-3xl pointer-events-none"></div>
 
     <div class="max-w-7xl mx-auto px-6 relative z-10">
 
         <!-- Header de section -->
         <div class="mb-16">
-            <p class="font-mono text-accent text-sm uppercase tracking-wider mb-2">// 02. COMPÉTENCES & STACK TECHNIQUE
-            </p>
+            <p class="font-mono text-accent text-sm uppercase tracking-wider mb-2">// 02. TECHNOLOGIES &amp; STACK
+                TECHNIQUE</p>
             <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">
-                Compétences & Stack Technique
+                Compétences
             </h2>
             <p class="text-gray-400 text-sm mt-3 max-w-xl">
                 Un équilibre entre l'ingénierie logicielle fullstack, l'administration système et la sécurité offensive
@@ -15,11 +18,27 @@
             </p>
         </div>
 
+        <!-- Grille des cartes de compétences -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
             <!-- Card 1: Web Development -->
             <div
-                class="group bg-bg-panel border border-border-soft p-8 hover:border-accent transition-all duration-300 flex flex-col justify-between">
+                class="group bg-bg-panel border border-border-soft p-8 hover:border-accent card-hover transition-all duration-300 flex flex-col justify-between relative rounded-none">
+
+                <!-- Viseurs décoratifs style Cyber sur les coins au survol -->
+                <div
+                    class="absolute -top-1 -left-1 w-2.5 h-2.5 border-t-2 border-l-2 border-accent opacity-0 group-hover:opacity-100 transition-opacity">
+                </div>
+                <div
+                    class="absolute -top-1 -right-1 w-2.5 h-2.5 border-t-2 border-r-2 border-accent opacity-0 group-hover:opacity-100 transition-opacity">
+                </div>
+                <div
+                    class="absolute -bottom-1 -left-1 w-2.5 h-2.5 border-b-2 border-l-2 border-accent opacity-0 group-hover:opacity-100 transition-opacity">
+                </div>
+                <div
+                    class="absolute -bottom-1 -right-1 w-2.5 h-2.5 border-b-2 border-r-2 border-accent opacity-0 group-hover:opacity-100 transition-opacity">
+                </div>
+
                 <div>
                     <div class="flex justify-between items-center mb-6">
                         <span
@@ -50,13 +69,28 @@
 
                 <div class="pt-6 border-t border-border-soft/60 flex items-center justify-between">
                     <span class="font-mono text-xs text-gray-500 uppercase tracking-wider">Scope:</span>
-                    <span class="font-mono text-xs text-accent">Architecture MVC & API REST</span>
+                    <span class="font-mono text-xs text-accent">Architecture MVC &amp; API REST</span>
                 </div>
             </div>
 
             <!-- Card 2: Security & Audits -->
             <div
-                class="group bg-bg-panel border border-border-soft p-8 hover:border-accent transition-all duration-300 flex flex-col justify-between">
+                class="group bg-bg-panel border border-border-soft p-8 hover:border-accent card-hover transition-all duration-300 flex flex-col justify-between relative rounded-none">
+
+                <!-- Viseurs décoratifs style Cyber sur les coins au survol -->
+                <div
+                    class="absolute -top-1 -left-1 w-2.5 h-2.5 border-t-2 border-l-2 border-accent opacity-0 group-hover:opacity-100 transition-opacity">
+                </div>
+                <div
+                    class="absolute -top-1 -right-1 w-2.5 h-2.5 border-t-2 border-r-2 border-accent opacity-0 group-hover:opacity-100 transition-opacity">
+                </div>
+                <div
+                    class="absolute -bottom-1 -left-1 w-2.5 h-2.5 border-b-2 border-l-2 border-accent opacity-0 group-hover:opacity-100 transition-opacity">
+                </div>
+                <div
+                    class="absolute -bottom-1 -right-1 w-2.5 h-2.5 border-b-2 border-r-2 border-accent opacity-0 group-hover:opacity-100 transition-opacity">
+                </div>
+
                 <div>
                     <div class="flex justify-between items-center mb-6">
                         <span
@@ -65,8 +99,8 @@
                         <span class="text-gray-500 font-mono text-sm">02</span>
                     </div>
 
-                    <h3 class="font-bold text-2xl text-white group-hover:text-accent transition-colors mb-3">Security &
-                        Pentest</h3>
+                    <h3 class="font-bold text-2xl text-white group-hover:text-accent transition-colors mb-3">Security
+                        &amp; Pentest</h3>
                     <p class="text-gray-400 text-sm mb-6 leading-relaxed">
                         Évaluation de la sécurité des applications, tests d'intrusion web, analyse statique/dynamique et
                         rédaction de rapports de remédiation.
@@ -87,13 +121,28 @@
 
                 <div class="pt-6 border-t border-border-soft/60 flex items-center justify-between">
                     <span class="font-mono text-xs text-gray-500 uppercase tracking-wider">Scope:</span>
-                    <span class="font-mono text-xs text-accent">Audit Web & Remédiation</span>
+                    <span class="font-mono text-xs text-accent">Audit Web &amp; Remédiation</span>
                 </div>
             </div>
 
             <!-- Card 3: Network & Systems -->
             <div
-                class="group bg-bg-panel border border-border-soft p-8 hover:border-accent transition-all duration-300 flex flex-col justify-between">
+                class="group bg-bg-panel border border-border-soft p-8 hover:border-accent card-hover transition-all duration-300 flex flex-col justify-between relative rounded-none">
+
+                <!-- Viseurs décoratifs style Cyber sur les coins au survol -->
+                <div
+                    class="absolute -top-1 -left-1 w-2.5 h-2.5 border-t-2 border-l-2 border-accent opacity-0 group-hover:opacity-100 transition-opacity">
+                </div>
+                <div
+                    class="absolute -top-1 -right-1 w-2.5 h-2.5 border-t-2 border-r-2 border-accent opacity-0 group-hover:opacity-100 transition-opacity">
+                </div>
+                <div
+                    class="absolute -bottom-1 -left-1 w-2.5 h-2.5 border-b-2 border-l-2 border-accent opacity-0 group-hover:opacity-100 transition-opacity">
+                </div>
+                <div
+                    class="absolute -bottom-1 -right-1 w-2.5 h-2.5 border-b-2 border-r-2 border-accent opacity-0 group-hover:opacity-100 transition-opacity">
+                </div>
+
                 <div>
                     <div class="flex justify-between items-center mb-6">
                         <span
@@ -102,8 +151,8 @@
                         <span class="text-gray-500 font-mono text-sm">03</span>
                     </div>
 
-                    <h3 class="font-bold text-2xl text-white group-hover:text-accent transition-colors mb-3">Network &
-                        Systems</h3>
+                    <h3 class="font-bold text-2xl text-white group-hover:text-accent transition-colors mb-3">Network
+                        &amp; Systems</h3>
                     <p class="text-gray-400 text-sm mb-6 leading-relaxed">
                         Administration, segmentation et sécurisation des réseaux et serveurs : durcissement OS, VPN,
                         VLANs, annuaires LDAP/AD.
@@ -123,13 +172,28 @@
 
                 <div class="pt-6 border-t border-border-soft/60 flex items-center justify-between">
                     <span class="font-mono text-xs text-gray-500 uppercase tracking-wider">Scope:</span>
-                    <span class="font-mono text-xs text-accent">Hardening & Infra Réseau</span>
+                    <span class="font-mono text-xs text-accent">Hardening &amp; Infra Réseau</span>
                 </div>
             </div>
 
             <!-- Card 4: Cloud & DevOps -->
             <div
-                class="group bg-bg-panel border border-border-soft p-8 hover:border-accent transition-all duration-300 flex flex-col justify-between">
+                class="group bg-bg-panel border border-border-soft p-8 hover:border-accent card-hover transition-all duration-300 flex flex-col justify-between relative rounded-none">
+
+                <!-- Viseurs décoratifs style Cyber sur les coins au survol -->
+                <div
+                    class="absolute -top-1 -left-1 w-2.5 h-2.5 border-t-2 border-l-2 border-accent opacity-0 group-hover:opacity-100 transition-opacity">
+                </div>
+                <div
+                    class="absolute -top-1 -right-1 w-2.5 h-2.5 border-t-2 border-r-2 border-accent opacity-0 group-hover:opacity-100 transition-opacity">
+                </div>
+                <div
+                    class="absolute -bottom-1 -left-1 w-2.5 h-2.5 border-b-2 border-l-2 border-accent opacity-0 group-hover:opacity-100 transition-opacity">
+                </div>
+                <div
+                    class="absolute -bottom-1 -right-1 w-2.5 h-2.5 border-b-2 border-r-2 border-accent opacity-0 group-hover:opacity-100 transition-opacity">
+                </div>
+
                 <div>
                     <div class="flex justify-between items-center mb-6">
                         <span
@@ -138,8 +202,8 @@
                         <span class="text-gray-500 font-mono text-sm">04</span>
                     </div>
 
-                    <h3 class="font-bold text-2xl text-white group-hover:text-accent transition-colors mb-3">Cloud &
-                        DevOps</h3>
+                    <h3 class="font-bold text-2xl text-white group-hover:text-accent transition-colors mb-3">Cloud
+                        &amp; DevOps</h3>
                     <p class="text-gray-400 text-sm mb-6 leading-relaxed">
                         Conteneurisation d'applications, automatisation du déploiement continu et sécurisation des
                         pipelines CI/CD (DevSecOps).
@@ -159,7 +223,7 @@
 
                 <div class="pt-6 border-t border-border-soft/60 flex items-center justify-between">
                     <span class="font-mono text-xs text-gray-500 uppercase tracking-wider">Scope:</span>
-                    <span class="font-mono text-xs text-accent">Conteneurisation & SecOps</span>
+                    <span class="font-mono text-xs text-accent">Conteneurisation &amp; SecOps</span>
                 </div>
             </div>
 

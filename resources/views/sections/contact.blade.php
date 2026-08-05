@@ -1,4 +1,4 @@
-<section id="contact" class="py-24 border-t border-border-soft bg-bg-dark relative overflow-hidden">
+<section id="contact" class="py-24 border-t border-border-soft bg-bg-dark relative overflow-hidden reveal">
 
     <!-- Lueur d'ambiance cyber -->
     <div class="absolute bottom-0 right-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl pointer-events-none"></div>
@@ -7,7 +7,7 @@
 
         <!-- Header de section -->
         <div class="mb-16">
-            <p class="font-mono text-accent text-sm uppercase tracking-wider mb-2">// 06. INITIATE CONNECTION</p>
+            <p class="font-mono text-accent text-sm uppercase tracking-wider mb-2">// 07. INITIATE CONNECTION</p>
             <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">Discutons de votre projet</h2>
             <p class="text-gray-400 text-sm mt-3 max-w-xl">
                 Besoin d'un audit de sécurité, d'un développement d'application web ou d'une consultation ? Envoyez un
@@ -23,16 +23,16 @@
                     <h3 class="text-2xl font-bold text-white mb-3">Let's Talk</h3>
                     <p class="text-gray-400 leading-relaxed text-sm mb-6">
                         Que ce soit pour un audit OWASP, le développement d'une architecture web robuste sous
-                        Laravel/React, ou une opportunité de collaboration - je reste joignable et réactif.
+                        Laravel/React, ou une opportunité de collaboration — je reste joignable et réactif.
                     </p>
                 </div>
 
                 <dl class="font-mono text-sm space-y-4">
                     <!-- Card Email -->
                     <div
-                        class="group flex items-center gap-4 border border-border-soft bg-bg-panel p-4 hover:border-accent transition-all duration-300">
+                        class="group flex items-center gap-4 border border-border-soft bg-bg-panel p-4 hover:border-accent card-hover transition-all duration-300 rounded-none">
                         <div
-                            class="w-10 h-10 border border-border-soft group-hover:border-accent group-hover:bg-accent/10 flex items-center justify-center text-accent text-lg shrink-0 transition-all">
+                            class="w-10 h-10 border border-border-soft group-hover:border-accent group-hover:bg-accent/10 flex items-center justify-center text-accent text-lg shrink-0 transition-all rounded-none">
                             ✉
                         </div>
                         <div class="overflow-hidden">
@@ -45,9 +45,9 @@
 
                     <!-- Card Téléphone -->
                     <div
-                        class="group flex items-center gap-4 border border-border-soft bg-bg-panel p-4 hover:border-accent transition-all duration-300">
+                        class="group flex items-center gap-4 border border-border-soft bg-bg-panel p-4 hover:border-accent card-hover transition-all duration-300 rounded-none">
                         <div
-                            class="w-10 h-10 border border-border-soft group-hover:border-accent group-hover:bg-accent/10 flex items-center justify-center text-accent text-lg shrink-0 transition-all">
+                            class="w-10 h-10 border border-border-soft group-hover:border-accent group-hover:bg-accent/10 flex items-center justify-center text-accent text-lg shrink-0 transition-all rounded-none">
                             ☎
                         </div>
                         <div>
@@ -60,9 +60,9 @@
 
                     <!-- Card Localisation -->
                     <div
-                        class="group flex items-center gap-4 border border-border-soft bg-bg-panel p-4 hover:border-accent transition-all duration-300">
+                        class="group flex items-center gap-4 border border-border-soft bg-bg-panel p-4 hover:border-accent card-hover transition-all duration-300 rounded-none">
                         <div
-                            class="w-10 h-10 border border-border-soft group-hover:border-accent group-hover:bg-accent/10 flex items-center justify-center text-accent text-lg shrink-0 transition-all">
+                            class="w-10 h-10 border border-border-soft group-hover:border-accent group-hover:bg-accent/10 flex items-center justify-center text-accent text-lg shrink-0 transition-all rounded-none">
                             ⚑
                         </div>
                         <div>
@@ -76,7 +76,7 @@
 
                 <!-- Status Indicator -->
                 <div
-                    class="p-4 border border-border-soft bg-bg-panel/50 font-mono text-xs flex items-center justify-between">
+                    class="p-4 border border-border-soft bg-bg-panel/50 font-mono text-xs flex items-center justify-between rounded-none">
                     <span class="text-gray-500">ENCRYPTION: 256-BIT SSL</span>
                     <span class="text-accent flex items-center gap-2">
                         <span class="w-2 h-2 bg-accent animate-ping rounded-full inline-block"></span>
@@ -85,8 +85,23 @@
                 </div>
             </div>
 
-            <!-- Formulaire de Contact Cyber (Champs Rectangulaires Strict) -->
-            <div class="bg-bg-panel border border-border-soft p-8 relative">
+            <!-- Formulaire de Contact Cyber (Champs Rectangulaires Stricts) -->
+            <div
+                class="group/form bg-bg-panel border border-border-soft hover:border-accent/80 p-8 relative rounded-none transition-all duration-300">
+
+                <!-- Viseurs décoratifs style Cyber sur les coins au survol -->
+                <div
+                    class="absolute -top-1 -left-1 w-2.5 h-2.5 border-t-2 border-l-2 border-accent opacity-0 group-hover/form:opacity-100 transition-opacity z-20">
+                </div>
+                <div
+                    class="absolute -top-1 -right-1 w-2.5 h-2.5 border-t-2 border-r-2 border-accent opacity-0 group-hover/form:opacity-100 transition-opacity z-20">
+                </div>
+                <div
+                    class="absolute -bottom-1 -left-1 w-2.5 h-2.5 border-b-2 border-l-2 border-accent opacity-0 group-hover/form:opacity-100 transition-opacity z-20">
+                </div>
+                <div
+                    class="absolute -bottom-1 -right-1 w-2.5 h-2.5 border-b-2 border-r-2 border-accent opacity-0 group-hover/form:opacity-100 transition-opacity z-20">
+                </div>
 
                 <!-- Décoration Terminal -->
                 <div
@@ -102,7 +117,7 @@
                 <!-- Message de succès Session Laravel -->
                 @if (session('success'))
                     <div
-                        class="mb-6 border border-accent bg-accent/10 text-accent px-4 py-3 font-mono text-xs flex items-center gap-2">
+                        class="mb-6 border border-accent bg-accent/10 text-accent px-4 py-3 font-mono text-xs flex items-center gap-2 rounded-none">
                         <span class="font-bold">[SUCCESS]</span>
                         <span>{{ session('success') }}</span>
                     </div>
@@ -150,9 +165,9 @@
 
                     <!-- Bouton Submit Rectangulaire Net -->
                     <button type="submit"
-                        class="w-full bg-accent text-bg-dark border border-accent px-6 py-4 font-mono text-sm font-semibold uppercase tracking-wider rounded-none hover:bg-transparent hover:text-accent transition-all duration-300 flex items-center justify-center gap-2 group">
+                        class="w-full bg-accent text-bg-dark border border-accent px-6 py-4 font-mono text-sm font-semibold uppercase tracking-wider rounded-none hover:bg-transparent hover:text-accent transition-all duration-300 flex items-center justify-center gap-2 group/btn">
                         <span>Send Message</span>
-                        <span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
+                        <span class="group-hover/btn:translate-x-1 transition-transform">&rarr;</span>
                     </button>
                 </form>
             </div>

@@ -1,4 +1,4 @@
-<section id="testimonials" class="py-24 border-t border-border-soft bg-bg-dark relative overflow-hidden">
+<section id="testimonials" class="py-24 border-t border-border-soft bg-bg-dark relative overflow-hidden reveal">
 
     <!-- Lueur subtile en arrière-plan -->
     <div class="absolute top-1/2 left-0 w-72 h-72 bg-accent/5 rounded-full blur-3xl pointer-events-none"></div>
@@ -7,9 +7,9 @@
 
         <!-- Header de section -->
         <div class="mb-16">
-            <p class="font-mono text-accent text-sm uppercase tracking-wider mb-2">// 04. FEEDBACK & REVIEWS</p>
-            <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">Ce que disent mes clients &amp;
-                collaborateurs</h2>
+            <p class="font-mono text-accent text-sm uppercase tracking-wider mb-2">// 05. CE QUE DISENT MES CLIENTS &amp;
+                COLLABORATEURS</p>
+            <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">Témoignages</h2>
             <p class="text-gray-400 text-sm mt-3 max-w-xl">
                 Retours d'expérience sur les missions d'audit de sécurité, le développement web et l'ingénierie
                 d'infrastructures.
@@ -57,7 +57,21 @@
 
             <?php $__currentLoopData = $testimonialsList; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                 <div
-                    class="group bg-bg-panel border border-border-soft p-8 hover:border-accent transition-all duration-300 flex flex-col justify-between relative">
+                    class="group bg-bg-panel border border-border-soft p-8 hover:border-accent card-hover transition-all duration-300 flex flex-col justify-between relative rounded-none">
+
+                    <!-- Viseurs décoratifs style Cyber sur les coins au survol -->
+                    <div
+                        class="absolute -top-1 -left-1 w-2.5 h-2.5 border-t-2 border-l-2 border-accent opacity-0 group-hover:opacity-100 transition-opacity z-20">
+                    </div>
+                    <div
+                        class="absolute -top-1 -right-1 w-2.5 h-2.5 border-t-2 border-r-2 border-accent opacity-0 group-hover:opacity-100 transition-opacity z-20">
+                    </div>
+                    <div
+                        class="absolute -bottom-1 -left-1 w-2.5 h-2.5 border-b-2 border-l-2 border-accent opacity-0 group-hover:opacity-100 transition-opacity z-20">
+                    </div>
+                    <div
+                        class="absolute -bottom-1 -right-1 w-2.5 h-2.5 border-b-2 border-r-2 border-accent opacity-0 group-hover:opacity-100 transition-opacity z-20">
+                    </div>
 
                     <!-- Guillemet / Watermark Décoratif -->
                     <span
@@ -69,7 +83,7 @@
                             <div class="flex items-center gap-4">
                                 <!-- Photo ou Avatar Fallback -->
                                 <div
-                                    class="w-14 h-14 border border-border-soft group-hover:border-accent transition-colors overflow-hidden shrink-0 bg-bg-dark flex items-center justify-center relative">
+                                    class="w-14 h-14 border border-border-soft group-hover:border-accent transition-colors overflow-hidden shrink-0 bg-bg-dark flex items-center justify-center relative rounded-none">
                                     <?php if(!empty($item['image']) && file_exists(public_path($item['image']))): ?>
                                         <img src="<?php echo e(asset($item['image'])); ?>" alt="<?php echo e($item['name']); ?>"
                                             class="w-full h-full object-cover">
@@ -107,7 +121,7 @@
                         <!-- Badge de service -->
                         <div class="mb-4">
                             <span
-                                class="inline-block font-mono text-[10px] text-accent bg-accent/10 border border-accent/20 px-2 py-0.5">
+                                class="inline-block font-mono text-[10px] text-accent bg-accent/10 border border-accent/20 px-2 py-0.5 rounded-none">
                                 // <?php echo e($item['tag']); ?>
 
                             </span>

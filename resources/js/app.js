@@ -22,3 +22,25 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Observer pour déclencher l'apparition des éléments lors du scroll
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px 0px -50px 0px', // Déclenche un peu avant que l'élément n'arrive au bas de l'écran
+        threshold: 0.15
+    };
+
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                // Optionnel : ne re-déclenche pas une fois affiché
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    // Appliquer l'effet à tous les éléments portant la classe .reveal
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+});
