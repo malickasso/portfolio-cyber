@@ -90,14 +90,14 @@
                     <!-- Grille de 2 boutons côte à côte -->
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                         <!-- CV Français -->
-                        <a href="{{ asset('cv-fr.pdf') }}" download
+                        <a href="{{ asset('CV_Abdou_Malick_ASSOUMA.pdf') }}" download
                             class="w-full text-center border border-accent bg-accent text-bg-dark px-4 py-3 font-mono text-xs font-semibold uppercase tracking-wider rounded-none hover:bg-transparent hover:text-accent transition-all duration-300 flex items-center justify-center gap-1.5 group">
                             <span>CV [FR]</span>
                             <span class="group-hover:translate-y-0.5 transition-transform">&darr;</span>
                         </a>
 
                         <!-- CV Anglais -->
-                        <a href="{{ asset('cv-en.pdf') }}" download
+                        <a href="{{ asset('CV_Abdou_Malick_ASSOUMA_EN.pdf') }}" download
                             class="w-full text-center border border-border-soft bg-bg-dark text-gray-300 px-4 py-3 font-mono text-xs font-semibold uppercase tracking-wider rounded-none hover:border-accent hover:text-accent transition-all duration-300 flex items-center justify-center gap-1.5 group">
                             <span>CV [EN]</span>
                             <span class="group-hover:translate-y-0.5 transition-transform">&darr;</span>

@@ -43,8 +43,8 @@ $projectList = $projects ?? [
         'title' => 'Readly',
         'category' => 'web',
         'tag' => 'Fullstack',
-        'description' => 'Bibliothèque numérique — PHP, MySQL, gestion des rôles et wishlist.',
-        'image' => 'images/projects/readly.jpg',
+        'description' => 'Bibliothèque numérique - PHP, MySQL, gestion des rôles et wishlist.',
+        'image' => 'images/projects/readly.png',
         'link' => '#',
     ],
     [
@@ -52,16 +52,16 @@ $projectList = $projects ?? [
         'category' => 'security',
         'tag' => 'Security Audit',
         'description' =>
-            'Rapport OWASP ZAP — CSP, CORS, SRI. Recommandations pour déploiement Render.com.',
-        'image' => 'images/projects/audit-zap.jpg',
+            'Rapport OWASP ZAP - CSP, CORS, SRI. Recommandations pour déploiement Render.com.',
+        'image' => 'images/projects/nodejs.png',
         'link' => '#',
     ],
     [
         'title' => 'AWS S3 Misconfiguration',
         'category' => 'security',
         'tag' => 'Pentest / Cloud',
-        'description' => 'PentesterLab — exploitation de permissions mal configurées sur bucket S3.',
-        'image' => null, // Ex. sans image -> Déclenche le placeholder Cyber
+        'description' => 'PentesterLab - exploitation de permissions mal configurées sur bucket S3.',
+        'image' => 'images/projects/aws.png',
         'link' => '#',
     ],
     [
@@ -70,7 +70,7 @@ $projectList = $projects ?? [
         'tag' => 'Network',
         'description' =>
             'Réseau bancaire multisite : VLANs, IPsec VPN, NAT/PAT, ACLs sur Cisco/MikroTik.',
-        'image' => 'images/projects/fintrust.jpg',
+        'image' => 'images/projects/infragns.png',
         'link' => '#',
     ],
     [
@@ -78,7 +78,7 @@ $projectList = $projects ?? [
         'category' => 'network',
         'tag' => 'Infra / Linux',
         'description' => 'LDAP, Postfix/Dovecot, Apache/WordPress, monitoring Prometheus/Grafana.',
-        'image' => null, // Ex. sans image -> Déclenche le placeholder Cyber
+        'image' => 'images/projects/vmware.png',
         'link' => '#',
     ],
     [
@@ -86,7 +86,7 @@ $projectList = $projects ?? [
         'category' => 'web',
         'tag' => 'API REST',
         'description' => 'API Node.js/Express déployée sur Render.com, sécurisée et documentée.',
-        'image' => 'images/projects/miniyi.jpg',
+        'image' => 'images/projects/miniyi.png',
         'link' => '#',
                     ],
                 ];
