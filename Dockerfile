@@ -22,4 +22,6 @@ COPY --chown=www-data:www-data . /var/www/html
 COPY --from=vendor --chown=www-data:www-data /app/vendor /var/www/html/vendor
 COPY --from=assets --chown=www-data:www-data /app/public/build /var/www/html/public/build
 
+RUN rm -f /var/www/html/bootstrap/cache/*.php
+
 USER www-data
